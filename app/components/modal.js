@@ -1,9 +1,13 @@
 const Modal = props => {
   let closeButton = null;
 
+  const closeModal = () => {
+    closeButton.click();
+  };
+
   const submitModal = () => {
     alert("Submit");
-    closeButton.click();
+    closeModal();
   };
 
   return (
@@ -50,13 +54,15 @@ const Modal = props => {
               >
                 Close
               </button>
-              <button
-                onClick={submitModal}
-                type="button"
-                className="btn btn-primary"
-              >
-                Save changes
-              </button>
+              {props.submit && (
+                <button
+                  onClick={submitModal}
+                  type="button"
+                  className="btn btn-primary"
+                >
+                  Save changes
+                </button>
+              )}
             </div>
           </div>
         </div>
