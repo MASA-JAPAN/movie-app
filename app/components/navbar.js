@@ -43,6 +43,16 @@ const Navbar = () => {
                 <a className="nav-link">Contact</a>
               </Link>
             </li>
+            <li className="nav-item">
+              <Link href="/login">
+                <a className="nav-link">Login</a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/logout">
+                <a className="nav-link">Logout</a>
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
