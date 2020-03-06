@@ -2,7 +2,6 @@ import App from "next/app";
 import Head from "next/head";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import { Auth0Provider } from "../services/react-auth0-spa";
 
 class MovieApp extends App {
   static async getInitialProps(appContext) {
